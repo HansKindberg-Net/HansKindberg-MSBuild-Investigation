@@ -1,0 +1,17 @@
+Targets executed - sorted alphabetically
+****************************************
+"_CheckForInvalidConfigurationAndPlatform"
+"_SplitProjectReferencesByFileExistence"
+"AfterClean"
+"AssignProjectConfiguration"
+"BeforeClean"
+"Clean"
+"CleanPublishFolder"
+"CleanReferencedProjects"
+"CleanWebPublishPipelineIntermediateOutput"
+"CleanWebsitesPackage"
+"CleanWebsitesPackageCore"
+"CleanWebsitesWPPAllFilesInSingleFolder"
+"CleanXsdCodeGen"
+"CoreClean"
+"GenerateMsDeployManifestSettings"

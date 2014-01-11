@@ -1,0 +1,14 @@
+_ReSharper*/
+bin/
+debug/
+EPiServer/
+FakesAssemblies/
+obj/
+packages/*
+release/
+testresults/
+*.suo
+*.user
+.nuget/NuGet.exe
+
+!packages/repositories.config
