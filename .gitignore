@@ -1,6 +1,7 @@
 _ReSharper*/
 bin/
 debug/
+Deploy/
 EPiServer/
 FakesAssemblies/
 obj/
@@ -11,4 +12,5 @@ testresults/
 *.user
 .nuget/NuGet.exe
 
+!Deploy/Deploy-ReadMe.txt
 !packages/repositories.config
