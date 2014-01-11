@@ -54,6 +54,9 @@
     <Content Include="Input\Clean.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Input\Publish-with-build-before.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Input\Publish.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

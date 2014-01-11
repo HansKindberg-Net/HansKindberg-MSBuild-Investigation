@@ -9,10 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build-information", "Build-
 	ProjectSection(SolutionItems) = preProject
 		Build-information\Build.txt = Build-information\Build.txt
 		Build-information\Clean.txt = Build-information\Clean.txt
+		Build-information\Publish-with-build-before.txt = Build-information\Publish-with-build-before.txt
 		Build-information\Publish.txt = Build-information\Publish.txt
 		Build-information\Run.txt = Build-information\Run.txt
 		Build-information\Sorted.Build.txt = Build-information\Sorted.Build.txt
 		Build-information\Sorted.Clean.txt = Build-information\Sorted.Clean.txt
+		Build-information\Sorted.Publish-with-build-before.txt = Build-information\Sorted.Publish-with-build-before.txt
 		Build-information\Sorted.Publish.txt = Build-information\Sorted.Publish.txt
 		Build-information\Sorted.Run.txt = Build-information\Sorted.Run.txt
 	EndProjectSection

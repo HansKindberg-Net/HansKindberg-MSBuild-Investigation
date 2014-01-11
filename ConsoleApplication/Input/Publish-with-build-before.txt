@@ -1,0 +1,1160 @@
+﻿1>------ Publish started: Project: WebApplication, Configuration: Debug Any CPU ------
+1>Connecting to ..\Deploy\Debug...
+1>Project "WebApplication.csproj" (GatherAllFilesToPublish target(s)):
+1>    Building with tools version "4.0".
+1>    Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (entry point):
+1>        Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+1>        Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+1>        Task "Message"
+1>        Task Parameter:Text=Configuration=Debug
+1>        Task Parameter:Importance=Low
+1>        Message: Configuration=Debug
+1>        Done executing task "Message".
+1>        Task "Message"
+1>        Task Parameter:Text=Platform=AnyCPU
+1>        Task Parameter:Importance=Low
+1>        Message: Platform=AnyCPU
+1>        Done executing task "Message".
+1>        Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('bin\' != '' and !HasTrailingSlash('bin\')).
+1>        Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
+1>        Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('obj\Debug\' != '' and !HasTrailingSlash('obj\Debug\')).
+1>        Done building target "_CheckForInvalidConfigurationAndPlatform" in project "WebApplication.csproj".
+1>    Target "_CheckPublishToolsUpToDate" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "GetProjectWebProperties" depends on it):
+1>        Using "PublishToolsVersionCheck" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.Tasks.dll".
+1>        Task "PublishToolsVersionCheck"
+1>        Done executing task "PublishToolsVersionCheck".
+1>        Done building target "_CheckPublishToolsUpToDate" in project "WebApplication.csproj".
+1>    Target "GetProjectWebProperties" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ValidateGlobalSettings" depends on it):
+1>        Using "GetProjectProperties" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.Tasks.dll".
+1>        Task "GetProjectProperties"
+1>        Task Parameter:ProjectFileFullPath=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj
+1>        Done executing task "GetProjectProperties".
+1>        Task "MapUriToIisWebServer" skipped, due to false condition; ($(UseIis) And ('$(IisUrl)' != '') And $(IncludeIisSettings)) was evaluated as (False And ('' != '') And False).
+1>        Using "FilterByItems" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.Tasks.dll".
+1>        Task "FilterByItems"
+1>        Task Parameter:
+1>    PipelineItems=
+1>        Clr4IntegratedAppPool
+1>                DestinationIISApplicationPool=ASP.NET v4.0
+1>        Clr4ClassicAppPool
+1>                DestinationIISApplicationPool=ASP.NET v4.0 Classic
+1>        Clr2IntegratedAppPool
+1>                DestinationIISApplicationPool=DefaultAppPool
+1>        Clr2ClassicAppPool
+1>                DestinationIISApplicationPool=Classic .NET AppPool
+1>        Done executing task "FilterByItems".
+1>        Task "CreateProperty"
+1>        Task Parameter:Value=False
+1>        Done executing task "CreateProperty".
+1>        Done building target "GetProjectWebProperties" in project "WebApplication.csproj".
+1>    Target "ValidateGlobalSettings" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "_CleanWPPIfNeedTo" depends on it):
+1>        Task "GetPublishingLocalizedString" skipped, due to false condition; ('$(WPPAllFilesInSingleFolder)' == ''  Or 
+1>          $([System.String]::IsNullOrWhiteSpace($(WPPAllFilesInSingleFolder)))) was evaluated as ('obj\Debug\Package\PackageTmp' == ''  Or 
+1>          False).
+1>        Task "Error" skipped, due to false condition; ('$(WPPAllFilesInSingleFolder)' == ''  Or 
+1>          $([System.String]::IsNullOrWhiteSpace($(WPPAllFilesInSingleFolder)))) was evaluated as ('obj\Debug\Package\PackageTmp' == ''  Or 
+1>          False).
+1>        Done building target "ValidateGlobalSettings" in project "WebApplication.csproj".
+1>    Target "_CleanWPPIfNeedTo" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Task "ReadLinesFromFile"
+1>        Task Parameter:File=obj\Debug\_WPPLastBuildInfo.txt
+1>        Done executing task "ReadLinesFromFile".
+1>        Task "Message"
+1>        Task Parameter:Text=_WPPLastBuildInfoLocation is obj\Debug\_WPPLastBuildInfo.txt
+1>              _WPPCurrentBuildInfo is PlatformName=AnyCPU;Configuration=Debug;WPPAllFilesInSingleFolder=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp;WebPublishProfileFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Properties\PublishProfiles\Debug.pubxml
+1>              _WPPLastBuildInfo is PlatformName=AnyCPU;Configuration=Debug;WPPAllFilesInSingleFolder=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp;WebPublishProfileFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Properties\PublishProfiles\Debug.pubxml
+1>              _IsSameWPPBuildInfoAsLastBuildInfo is True
+1>        Task Parameter:Importance=Low
+1>        Message: _WPPLastBuildInfoLocation is obj\Debug\_WPPLastBuildInfo.txt
+1>              _WPPCurrentBuildInfo is PlatformName=AnyCPU;Configuration=Debug;WPPAllFilesInSingleFolder=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp;WebPublishProfileFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Properties\PublishProfiles\Debug.pubxml
+1>              _WPPLastBuildInfo is PlatformName=AnyCPU;Configuration=Debug;WPPAllFilesInSingleFolder=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp;WebPublishProfileFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Properties\PublishProfiles\Debug.pubxml
+1>              _IsSameWPPBuildInfoAsLastBuildInfo is True
+1>        Done executing task "Message".
+1>        Task "CallTarget" skipped, due to false condition; (!$(_IsSameWPPBuildInfoAsLastBuildInfo)) was evaluated as (!True).
+1>        Task "MakeDir" skipped, due to false condition; (!Exists($(_WPPLastBuildInfoLocationDirectory))) was evaluated as (!Exists(obj\Debug)).
+1>        Task "WriteLinesToFile"
+1>        Task Parameter:File=obj\Debug\_WPPLastBuildInfo.txt
+1>        Task Parameter:
+1>    Lines=
+1>        PlatformName=AnyCPU
+1>        Configuration=Debug
+1>        WPPAllFilesInSingleFolder=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp
+1>        WebPublishProfileFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Properties\PublishProfiles\Debug.pubxml
+1>        Task Parameter:Overwrite=True
+1>        Task Parameter:Encoding=Unicode
+1>        Done executing task "WriteLinesToFile".
+1>        Done building target "_CleanWPPIfNeedTo" in project "WebApplication.csproj".
+1>    Target "WPPCopyWebApplicaitonPipelineCircularDependencyError" skipped, due to false condition; ($(WPPCopyWebApplicaitonPipelineCircularDependencyError)) was evaluated as (False).
+1>    Target "ProcessItemToExcludeFromDeployment" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Done building target "ProcessItemToExcludeFromDeployment" in project "WebApplication.csproj".
+1>    Target "GetProjectWebProperties" skipped. Previously built successfully.
+1>    Target "ValidateGlobalSettings" skipped. Previously built successfully.
+1>    Target "GetProjectWebProperties" skipped. Previously built successfully.
+1>    Target "ValidateGlobalSettings" skipped. Previously built successfully.
+1>    Target "ValidateGlobalPackageSetting" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Using "GetPublishingLocalizedString" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.Tasks.dll".
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_MsBuildPropertySettingValue
+1>        Task Parameter:ArgumentCount=2
+1>        Task Parameter:
+1>    Arguments=
+1>        PackageAsSingleFile
+1>        True
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: $(PackageAsSingleFile) is True
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_CheckingForValidMsBuildPropertyValue
+1>        Task Parameter:ArgumentCount=2
+1>        Task Parameter:
+1>    Arguments=
+1>        PackageFileName
+1>        obj\Debug\Package\WebApplication.zip
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: $(PackageFileName) is obj\Debug\Package\WebApplication.zip. Validating...
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "GetPublishingLocalizedString" skipped, due to false condition; (!$(PackageAsSingleFile)) was evaluated as (!True).
+1>        Using "CheckPathAttributes" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.Tasks.dll".
+1>        Task "CheckPathAttributes"
+1>        Task Parameter:Path=obj\Debug\Package\WebApplication.zip
+1>        Done executing task "CheckPathAttributes".
+1>        Task "CheckPathAttributes" skipped, due to false condition; ('$(_CheckPackageLocationArchiveDir)' != '') was evaluated as ('' != '').
+1>        Task "GetPublishingLocalizedString" skipped, due to false condition; ($(PackageAsSingleFile) And $(_CheckPackageLocationExists) And $(_CheckPackageLocationIsFolder)) was evaluated as (True And False And False).
+1>        Task "GetPublishingLocalizedString" skipped, due to false condition; (!$(PackageAsSingleFile) And $(_CheckPackageLocationExists) And !$(_CheckPackageLocationIsFolder)) was evaluated as (!True And False And !False).
+1>        Task "GetPublishingLocalizedString" skipped, due to false condition; (!$(PackageAsSingleFile) And $(_CheckPackageLocationArchiveDirExists) And !$(_CheckPackageLocationArchiveDirIsFolder)) was evaluated as (!True And  And !).
+1>        Task "GetPublishingLocalizedString" skipped, due to false condition; ($(DestinationUseIis) And ($(DestinationIisVersion) < '7') And $(_DeploymentUseIis) And ($(LocalIisVersion) >= '7')) was evaluated as (False And (0 < '7') And False And (0 >= '7')).
+1>        Task "Error" skipped, due to false condition; ((!$(PackageAsSingleFile) And $(_CheckPackageLocationExists) And !$(_CheckPackageLocationIsFolder)) 
+1>       Or ($(PackageAsSingleFile) And $(_CheckPackageLocationExists) And $(_CheckPackageLocationIsFolder))
+1>       Or (!$(PackageAsSingleFile) And $(_CheckPackageLocationArchiveDirExists) And !$(_CheckPackageLocationArchiveDirIsFolder))
+1>       Or ($(DestinationUseIis) And ($(DestinationIisVersion) < '7') And $(_DeploymentUseIis) And ($(LocalIisVersion) >= '7'))) was evaluated as ((!True And False And !False) 
+1>       Or (True And False And False)
+1>       Or (!True And  And !)
+1>       Or (False And (0 < '7') And False And (0 >= '7'))).
+1>        Done building target "ValidateGlobalPackageSetting" in project "WebApplication.csproj".
+1>    Target "BeforeBeforeBuild" in file "C:\Data\Projects\HansKindberg-MSBuild-Investigation\Targets\Laboration.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "BeforeBuild" depends on it):
+1>        Task "Message"
+1>        Task Parameter:Importance=high
+1>        Task Parameter:Text=Target before 'BeforeBuild' has been executed.
+1>        Message: Target before 'BeforeBuild' has been executed.
+1>        Done executing task "Message".
+1>        Task "Copy"
+1>        Task Parameter:DestinationFiles=Web.config
+1>        Task Parameter:SourceFiles=Web.Template.config
+1>        Copy: Copying file from "Web.Template.config" to "Web.config".
+1>        Done executing task "Copy".
+1>        Done building target "BeforeBeforeBuild" in project "WebApplication.csproj".
+1>    Target "BeforeBuild" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Done building target "BeforeBuild" in project "WebApplication.csproj".
+1>    Target "BuildOnlySettings" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Done building target "BuildOnlySettings" in project "WebApplication.csproj".
+1>    Target "BeforeResolveReferences" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveReferences" depends on it):
+1>        Done building target "BeforeResolveReferences" in project "WebApplication.csproj".
+1>    Target "AssignProjectConfiguration" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveReferences" depends on it):
+1>        Task "AssignProjectConfiguration"
+1>        Task Parameter:CurrentProject=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj
+1>        Task Parameter:CurrentProjectConfiguration=Debug
+1>        Task Parameter:CurrentProjectPlatform=AnyCPU
+1>        Task Parameter:OutputType=Library
+1>        Task Parameter:ResolveConfigurationPlatformUsingMappings=False
+1>        Task Parameter:SolutionConfigurationContents=<SolutionConfiguration>
+1><ProjectConfiguration Project="{ed24353f-d34a-4800-b3d0-ff30426cd880}" AbsolutePath="C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj">Debug|AnyCPU</ProjectConfiguration>
+1><ProjectConfiguration Project="{7d892469-286f-46bc-9025-01e80ff9772e}" AbsolutePath="C:\Data\Projects\HansKindberg-MSBuild-Investigation\ConsoleApplication\ConsoleApplication.csproj">Debug|AnyCPU</ProjectConfiguration>
+1></SolutionConfiguration>
+1>        Task Parameter:OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration=True
+1>        Task Parameter:ShouldUnsetParentConfigurationAndPlatform=True
+1>        Done executing task "AssignProjectConfiguration".
+1>        Done building target "AssignProjectConfiguration" in project "WebApplication.csproj".
+1>    Target "AssignProjectConfiguration" skipped. Previously built successfully.
+1>    Target "_SplitProjectReferencesByFileExistence" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveProjectReferences" depends on it):
+1>        Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
+1>        Done building target "_SplitProjectReferencesByFileExistence" in project "WebApplication.csproj".
+1>    Target "ResolveProjectReferences" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveReferences" depends on it):
+1>        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '' != '').
+1>        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
+1>        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
+1>        Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
+1>        Done building target "ResolveProjectReferences" in project "WebApplication.csproj".
+1>    Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+1>    Target "GetFrameworkPaths" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveAssemblyReferences" depends on it):
+1>        Done building target "GetFrameworkPaths" in project "WebApplication.csproj".
+1>    Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
+1>    Target "GetReferenceAssemblyPaths" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveAssemblyReferences" depends on it):
+1>        Task "GetReferenceAssemblyPaths"
+1>        Task Parameter:TargetFrameworkMoniker=.NETFramework,Version=v4.5
+1>        Done executing task "GetReferenceAssemblyPaths".
+1>        Done building target "GetReferenceAssemblyPaths" in project "WebApplication.csproj".
+1>    Target "GetFrameworkPaths" skipped. Previously built successfully.
+1>    Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+1>    Target "PrepareForBuild" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveAssemblyReferences" depends on it):
+1>        Task "FindAppConfigFile"
+1>        Task Parameter:
+1>    PrimaryList=
+1>        Properties\PublishProfiles\Release.pubxml
+1>        Properties\PublishProfiles\Debug.pubxml
+1>        Web.Debug.config
+1>                DependentUpon=Web.config
+1>        Web.Release.config
+1>                DependentUpon=Web.config
+1>        Task Parameter:
+1>    SecondaryList=
+1>        Default.aspx
+1>        Web.config
+1>        Web.Template.config
+1>        Task Parameter:TargetPath=WebApplication.dll.config
+1>        Done executing task "FindAppConfigFile".
+1>        Task "MakeDir"
+1>        Task Parameter:
+1>    Directories=
+1>        bin\
+1>        obj\Debug\
+1>        Done executing task "MakeDir".
+1>        Done building target "PrepareForBuild" in project "WebApplication.csproj".
+1>    Target "GetInstalledSDKLocations" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveSDKReferences" depends on it):
+1>        Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
+1>        Done building target "GetInstalledSDKLocations" in project "WebApplication.csproj".
+1>    Target "ResolveSDKReferences" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveAssemblyReferences" depends on it):
+1>        Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
+1>        Done building target "ResolveSDKReferences" in project "WebApplication.csproj".
+1>    Target "ResolveSDKReferences" skipped. Previously built successfully.
+1>    Target "ExpandSDKReferences" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveAssemblyReferences" depends on it):
+1>        Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
+1>        Done building target "ExpandSDKReferences" in project "WebApplication.csproj".
+1>    Target "FakesGenerateBeforeBuild" skipped, due to false condition; (@(Fakes) != '' AND $(BuildingProject)) was evaluated as ( != '' AND true).
+1>    Target "ResolveAssemblyReferences" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveReferences" depends on it):
+1>        Task "ResolveAssemblyReference"
+1>        Task Parameter:
+1>    Assemblies=
+1>        System
+1>        System.Web
+1>        System.Configuration
+1>        System.Core
+1>                Implicit=true
+1>        Task Parameter:AssemblyFiles=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll
+1>        Task Parameter:
+1>    TargetFrameworkDirectories=
+1>        C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\
+1>        C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\
+1>        Task Parameter:
+1>    CandidateAssemblyFiles=
+1>        Default.aspx
+1>        Web.config
+1>        Web.Template.config
+1>        Properties\PublishProfiles\Release.pubxml
+1>        Properties\PublishProfiles\Debug.pubxml
+1>        Web.Debug.config
+1>        Web.Release.config
+1>        Task Parameter:
+1>    SearchPaths=
+1>        C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies
+1>        {CandidateAssemblyFiles}
+1>        {HintPathFromItem}
+1>        {TargetFrameworkDirectory}
+1>        {Registry:Software\Microsoft\.NETFramework,v4.5,AssemblyFoldersEx}
+1>        {AssemblyFolders}
+1>        {GAC}
+1>        {RawFileName}
+1>        bin\
+1>        Task Parameter:
+1>    AllowedAssemblyExtensions=
+1>        .winmd
+1>        .dll
+1>        .exe
+1>        Task Parameter:
+1>    AllowedRelatedFileExtensions=
+1>        .pdb
+1>        .xml
+1>        .pri
+1>        Task Parameter:TargetProcessorArchitecture=msil
+1>        Task Parameter:AutoUnify=True
+1>        Task Parameter:FindSatellites=True
+1>        Task Parameter:FindSerializationAssemblies=True
+1>        Task Parameter:FindRelatedFiles=True
+1>        Task Parameter:Silent=False
+1>        Task Parameter:TargetFrameworkVersion=v4.5
+1>        Task Parameter:TargetFrameworkMoniker=.NETFramework,Version=v4.5
+1>        Task Parameter:TargetFrameworkMonikerDisplayName=.NET Framework 4.5
+1>        Task Parameter:TargetedRuntimeVersion=v4.0.30319
+1>        Task Parameter:StateFile=obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+1>        Task Parameter:FullTargetFrameworkSubsetNames=Full
+1>        Task Parameter:FullFrameworkFolders=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\
+1>        Task Parameter:WarnOrErrorOnTargetArchitectureMismatch=Warning
+1>        ResolveAssemblyReference: TargetFrameworkMoniker:
+1>        ResolveAssemblyReference:     .NETFramework,Version=v4.5
+1>        ResolveAssemblyReference: TargetFrameworkMonikerDisplayName:
+1>        ResolveAssemblyReference:     .NET Framework 4.5
+1>        ResolveAssemblyReference: TargetedRuntimeVersion:
+1>        ResolveAssemblyReference:     v4.0.30319
+1>        ResolveAssemblyReference: Assemblies:
+1>        ResolveAssemblyReference:     System
+1>        ResolveAssemblyReference:     System.Web
+1>        ResolveAssemblyReference:     System.Configuration
+1>        ResolveAssemblyReference:     System.Core
+1>        ResolveAssemblyReference: AssemblyFiles:
+1>        ResolveAssemblyReference:     C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll
+1>        ResolveAssemblyReference: CandidateAssemblyFiles:
+1>        ResolveAssemblyReference: TargetFrameworkDirectories:
+1>        ResolveAssemblyReference:     C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\,C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\
+1>        ResolveAssemblyReference: InstalledAssemblyTables:
+1>        ResolveAssemblyReference: IgnoreInstalledAssemblyTable:
+1>        ResolveAssemblyReference:     False
+1>        ResolveAssemblyReference: SearchPaths:
+1>        ResolveAssemblyReference:     C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies
+1>        ResolveAssemblyReference:     {CandidateAssemblyFiles}
+1>        ResolveAssemblyReference:     {HintPathFromItem}
+1>        ResolveAssemblyReference:     {TargetFrameworkDirectory}
+1>        ResolveAssemblyReference:     {Registry:Software\Microsoft\.NETFramework,v4.5,AssemblyFoldersEx}
+1>        ResolveAssemblyReference:     {AssemblyFolders}
+1>        ResolveAssemblyReference:     {GAC}
+1>        ResolveAssemblyReference:     {RawFileName}
+1>        ResolveAssemblyReference:     bin\
+1>        ResolveAssemblyReference: AllowedAssemblyExtensions:
+1>        ResolveAssemblyReference:     .winmd
+1>        ResolveAssemblyReference:     .dll
+1>        ResolveAssemblyReference:     .exe
+1>        ResolveAssemblyReference: AllowedRelatedFileExtensions:
+1>        ResolveAssemblyReference:     .pdb
+1>        ResolveAssemblyReference:     .xml
+1>        ResolveAssemblyReference:     .pri
+1>        ResolveAssemblyReference: AppConfigFile:
+1>        ResolveAssemblyReference:     
+1>        ResolveAssemblyReference: AutoUnify:
+1>        ResolveAssemblyReference:     True
+1>        ResolveAssemblyReference: CopyLocalDependenciesWhenParentReferenceInGac:
+1>        ResolveAssemblyReference:     True
+1>        ResolveAssemblyReference: FindDependencies:
+1>        ResolveAssemblyReference:     True
+1>        ResolveAssemblyReference: TargetProcessorArchitecture:
+1>        ResolveAssemblyReference:     msil
+1>        ResolveAssemblyReference: StateFile:
+1>        ResolveAssemblyReference:     obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+1>        ResolveAssemblyReference: InstalledAssemblySubsetTables:
+1>        ResolveAssemblyReference: IgnoreInstalledAssemblySubsetTable:
+1>        ResolveAssemblyReference:     False
+1>        ResolveAssemblyReference: TargetFrameworkSubsets:
+1>        ResolveAssemblyReference: FullTargetFrameworkSubsetNames:
+1>        ResolveAssemblyReference:     Full
+1>        ResolveAssemblyReference: ProfileName:
+1>        ResolveAssemblyReference:     
+1>        ResolveAssemblyReference: FullFrameworkFolders:
+1>        ResolveAssemblyReference:     C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\
+1>        ResolveAssemblyReference: LatestTargetFrameworkDirectories:
+1>        ResolveAssemblyReference: ProfileTablesLocation:
+1>        ResolveAssemblyReference: Primary reference "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+1>        ResolveAssemblyReference:     Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll".
+1>        ResolveAssemblyReference:     Reference found at search path location "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll".
+1>        ResolveAssemblyReference:     This reference is not "CopyLocal" because it's in a Frameworks directory.
+1>        ResolveAssemblyReference:     The ImageRuntimeVersion for this reference is "v4.0.30319".
+1>        ResolveAssemblyReference: Primary reference "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+1>        ResolveAssemblyReference:     Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll".
+1>        ResolveAssemblyReference:     Reference found at search path location "{TargetFrameworkDirectory}".
+1>        ResolveAssemblyReference:         For SearchPath "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies".
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.winmd", but it didn't exist.
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.dll", but it didn't exist.
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.exe", but it didn't exist.
+1>        ResolveAssemblyReference:         For SearchPath "{TargetFrameworkDirectory}".
+1>        ResolveAssemblyReference:         Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.winmd", but it didn't exist.
+1>        ResolveAssemblyReference:     This reference is not "CopyLocal" because it's a prerequisite file.
+1>        ResolveAssemblyReference:     The ImageRuntimeVersion for this reference is "v4.0.30319".
+1>        ResolveAssemblyReference: Primary reference "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+1>        ResolveAssemblyReference:     Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Web.dll".
+1>        ResolveAssemblyReference:     Reference found at search path location "{TargetFrameworkDirectory}".
+1>        ResolveAssemblyReference:         For SearchPath "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies".
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.Web.winmd", but it didn't exist.
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.Web.dll", but it didn't exist.
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.Web.exe", but it didn't exist.
+1>        ResolveAssemblyReference:         For SearchPath "{TargetFrameworkDirectory}".
+1>        ResolveAssemblyReference:         Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Web.winmd", but it didn't exist.
+1>        ResolveAssemblyReference:     This reference is not "CopyLocal" because it's a prerequisite file.
+1>        ResolveAssemblyReference:     The ImageRuntimeVersion for this reference is "v4.0.30319".
+1>        ResolveAssemblyReference: Primary reference "System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+1>        ResolveAssemblyReference:     Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Configuration.dll".
+1>        ResolveAssemblyReference:     Reference found at search path location "{TargetFrameworkDirectory}".
+1>        ResolveAssemblyReference:         For SearchPath "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies".
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.Configuration.winmd", but it didn't exist.
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.Configuration.dll", but it didn't exist.
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.Configuration.exe", but it didn't exist.
+1>        ResolveAssemblyReference:         For SearchPath "{TargetFrameworkDirectory}".
+1>        ResolveAssemblyReference:         Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Configuration.winmd", but it didn't exist.
+1>        ResolveAssemblyReference:     This reference is not "CopyLocal" because it's a prerequisite file.
+1>        ResolveAssemblyReference:     The ImageRuntimeVersion for this reference is "v4.0.30319".
+1>        ResolveAssemblyReference: Primary reference "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+1>        ResolveAssemblyReference:     Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll".
+1>        ResolveAssemblyReference:     Reference found at search path location "{TargetFrameworkDirectory}".
+1>        ResolveAssemblyReference:         For SearchPath "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies".
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.Core.winmd", but it didn't exist.
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.Core.dll", but it didn't exist.
+1>        ResolveAssemblyReference:         Considered "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\FakesAssemblies\System.Core.exe", but it didn't exist.
+1>        ResolveAssemblyReference:         For SearchPath "{TargetFrameworkDirectory}".
+1>        ResolveAssemblyReference:         Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.winmd", but it didn't exist.
+1>        ResolveAssemblyReference:     This reference is not "CopyLocal" because it's a prerequisite file.
+1>        ResolveAssemblyReference:     The ImageRuntimeVersion for this reference is "v4.0.30319".
+1>        Done executing task "ResolveAssemblyReference".
+1>        Done building target "ResolveAssemblyReferences" in project "WebApplication.csproj".
+1>    Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+1>    Target "AfterResolveReferences" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveReferences" depends on it):
+1>        Done building target "AfterResolveReferences" in project "WebApplication.csproj".
+1>    Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+1>    Target "ImplicitlyExpandDesignTimeFacades" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ResolveReferences" depends on it):
+1>        Task "Message" skipped, due to false condition; ('%(ReferencePath.ResolvedFrom)' == 'ImplicitlyExpandDesignTimeFacades') was evaluated as ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll' == 'ImplicitlyExpandDesignTimeFacades').
+1>        Task "Message" skipped, due to false condition; ('%(ReferencePath.ResolvedFrom)' == 'ImplicitlyExpandDesignTimeFacades') was evaluated as ('{TargetFrameworkDirectory}' == 'ImplicitlyExpandDesignTimeFacades').
+1>        Done building target "ImplicitlyExpandDesignTimeFacades" in project "WebApplication.csproj".
+1>    Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
+1>    Target "ResolveReferences" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Done building target "ResolveReferences" in project "WebApplication.csproj".
+1>    Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
+1>    Target "AssignTargetPaths" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PrepareResourceNames" depends on it):
+1>        Task "AssignTargetPath"
+1>        Task Parameter:RootFolder=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication
+1>        Done executing task "AssignTargetPath".
+1>        Task "AssignTargetPath"
+1>        Task Parameter:
+1>    Files=
+1>        Default.aspx
+1>        Web.config
+1>        Web.Template.config
+1>        Task Parameter:RootFolder=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication
+1>        Done executing task "AssignTargetPath".
+1>        Task "AssignTargetPath"
+1>        Task Parameter:
+1>    Files=
+1>        Properties\PublishProfiles\Release.pubxml
+1>        Properties\PublishProfiles\Debug.pubxml
+1>        Web.Debug.config
+1>                DependentUpon=Web.config
+1>        Web.Release.config
+1>                DependentUpon=Web.config
+1>        Task Parameter:RootFolder=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication
+1>        Done executing task "AssignTargetPath".
+1>        Task "AssignTargetPath"
+1>        Task Parameter:RootFolder=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication
+1>        Done executing task "AssignTargetPath".
+1>        Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and '.pubxml'=='.manifest').
+1>        Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and '.config'=='.manifest').
+1>        Done building target "AssignTargetPaths" in project "WebApplication.csproj".
+1>    Target "AssignTargetPaths" skipped. Previously built successfully.
+1>    Target "SplitResourcesByCulture" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PrepareResourceNames" depends on it):
+1>        Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+1>        Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+1>        Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+1>        Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+1>        Task "AssignCulture"
+1>        Done executing task "AssignCulture".
+1>        Done building target "SplitResourcesByCulture" in project "WebApplication.csproj".
+1>    Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
+1>    Target "CreateCustomManifestResourceNames" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PrepareResourceNames" depends on it):
+1>        Done building target "CreateCustomManifestResourceNames" in project "WebApplication.csproj".
+1>    Target "PrepareResourceNames" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Done building target "PrepareResourceNames" in project "WebApplication.csproj".
+1>    Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+1>    Target "AssignTargetPaths" skipped. Previously built successfully.
+1>    Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+1>    Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+1>        Task "AssignTargetPath"
+1>        Task Parameter:RootFolder=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication
+1>        Done executing task "AssignTargetPath".
+1>        Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "WebApplication.csproj".
+1>    Target "GetCopyToOutputDirectoryItems" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
+1>        Task "AssignTargetPath"
+1>        Task Parameter:RootFolder=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication
+1>        Done executing task "AssignTargetPath".
+1>        Done building target "GetCopyToOutputDirectoryItems" in project "WebApplication.csproj".
+1>    Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+1>    Target "AfterBuild" in file "C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Done building target "AfterBuild" in project "WebApplication.csproj".
+1>    Target "CollectFilesFromIntermediateAssembly" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\CollectFiles\Microsoft.Web.Publishing.OnlyFilesToRunTheApp.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_GatherSpecificItemsFromProject
+1>        Task Parameter:ArgumentCount=1
+1>        Task Parameter:Arguments=IntermediateAssembly
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Gather all files from Project items @(IntermediateAssembly). Adding:
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "Message"
+1>        Task Parameter:Text=bin\WebApplication.dll to bin\WebApplication.dll
+1>        Message: bin\WebApplication.dll to bin\WebApplication.dll
+1>        Done executing task "Message".
+1>        Task "Message"
+1>        Task Parameter:Text=bin\WebApplication.pdb to bin\WebApplication.pdb
+1>        Message: bin\WebApplication.pdb to bin\WebApplication.pdb
+1>        Done executing task "Message".
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "CollectFilesFromIntermediateAssembly" in project "WebApplication.csproj".
+1>    Target "CollectFilesFromContent" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\CollectFiles\Microsoft.Web.Publishing.OnlyFilesToRunTheApp.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_GatherSpecificItemsFromProject
+1>        Task Parameter:ArgumentCount=1
+1>        Task Parameter:Arguments=Content
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Gather all files from Project items @(Content). Adding:
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "Message"
+1>        Task Parameter:Text=Default.aspx;Web.config;Web.Template.config
+1>        Message: Default.aspx;Web.config;Web.Template.config
+1>        Done executing task "Message".
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "CollectFilesFromContent" in project "WebApplication.csproj".
+1>    Target "CollectFilesFromAddModules" skipped, due to false condition; ('@(AddModules)'!='') was evaluated as (''!='').
+1>    Target "CollectFilesFrom_SGenDllCreated" skipped, due to false condition; ($(_SGenDllCreated)) was evaluated as (false).
+1>    Target "CollectFilesFromIntermediateSatelliteAssembliesWithTargetPath" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\CollectFiles\Microsoft.Web.Publishing.OnlyFilesToRunTheApp.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_GatherSpecificOutputsFromProject
+1>        Task Parameter:ArgumentCount=1
+1>        Task Parameter:Arguments=IntermediateSatelliteAssembliesWithTargetPath
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Gather all files from Project output (IntermediateSatelliteAssembliesWithTargetPath). Adding:
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "Message"
+1>        Done executing task "Message".
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "CollectFilesFromIntermediateSatelliteAssembliesWithTargetPath" in project "WebApplication.csproj".
+1>    Target "ResolveProjectReferences" skipped. Previously built successfully.
+1>    Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+1>    Target "CollectFilesFromReference" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\CollectFiles\Microsoft.Web.Publishing.OnlyFilesToRunTheApp.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_GatherSpecificItemsFromProjectNoDetail
+1>        Task Parameter:ArgumentCount=1
+1>        Task Parameter:Arguments=ReferenceCopyLocalPaths,ReferenceComWrappersToCopyLocal,ResolvedIsolatedComModules,_DeploymentLooseManifestFile,NativeReferenceFile
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Gather all files from Project items @(ReferenceCopyLocalPaths,ReferenceComWrappersToCopyLocal,ResolvedIsolatedComModules,_DeploymentLooseManifestFile,NativeReferenceFile).
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "CollectFilesFromReference" in project "WebApplication.csproj".
+1>    Target "CollectFilesFromAllExtraReferenceFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\CollectFiles\Microsoft.Web.Publishing.OnlyFilesToRunTheApp.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_GatherSpecificItemsFromProject
+1>        Task Parameter:ArgumentCount=1
+1>        Task Parameter:Arguments=AllExtraReferenceFiles
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Gather all files from Project items @(AllExtraReferenceFiles). Adding:
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "Message"
+1>        Done executing task "Message".
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "CollectFilesFromAllExtraReferenceFiles" in project "WebApplication.csproj".
+1>    Target "CollectFilesFrom_SourceItemsToCopyToOutputDirectory" skipped, due to false condition; ('@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' or '@(_SourceItemsToCopyToOutputDirectory)' != '') was evaluated as ('' != '' or '' != '').
+1>    Target "CollectFilesFromDocFileItem" skipped, due to false condition; ($(_DocumentationFileProduced)) was evaluated as (false).
+1>    Target "CollectFilesFrom_WebApplicationSilverlightXapFiles" skipped, due to false condition; ('@(_WebApplicationSilverlightXapFiles)'!='') was evaluated as (''!='').
+1>    Target "_CopyBinDeployableAssemblies" skipped, due to false condition; (Exists('$(MSBuildProjectDirectory)\_bin_deployableAssemblies')) was evaluated as (Exists('C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\_bin_deployableAssemblies')).
+1>    Target "CollectFilesFrom_binDeployableAssemblies" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\CollectFiles\Microsoft.Web.Publishing.OnlyFilesToRunTheApp.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>        Task "FilterByItems"
+1>        Task Parameter:SourceMetadataName=FullPath
+1>        Task Parameter:
+1>    Filter=
+1>        Properties\PublishProfiles\Release.pubxml
+1>        Properties\PublishProfiles\Debug.pubxml
+1>        Web.Debug.config
+1>                DependentUpon=Web.config
+1>        Web.Release.config
+1>                DependentUpon=Web.config
+1>        Task Parameter:FilterMetadataName=FullPath
+1>        Done executing task "FilterByItems".
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_GatherSpecificItemsFromProject
+1>        Task Parameter:ArgumentCount=1
+1>        Task Parameter:Arguments=_binDeployableAssemblies
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Gather all files from Project items @(_binDeployableAssemblies). Adding:
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "Message"
+1>        Done executing task "Message".
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "CollectFilesFrom_binDeployableAssemblies" in project "WebApplication.csproj".
+1>    Target "PipelineCollectFilesPhase" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineTransformPhase" depends on it):
+1>        Building target "PipelineCollectFilesPhase" completely.
+1>        No input files were specified.
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_WebPublishPipelineCollectFilesPhase
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Publish Pipeline Collect Files Phase
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "MakeDir" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert) And !Exists('$(PackageLogDir)')) was evaluated as (False And !Exists('obj\Debug\Package\Log')).
+1>        Task "WriteLinesToFile" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert)) was evaluated as (False).
+1>        Task "CheckItemsForDuplication" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert)) was evaluated as (False).
+1>        Task "CheckItemsForDuplication" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert)) was evaluated as (False).
+1>        Task "CallTarget"
+1>        Task Parameter:
+1>    Targets=
+1>        ExcludeFilesFromPackage
+1>        ImportParametersFiles
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Target "ExcludeApp_Data" skipped, due to false condition; ($(ExcludeApp_Data)) was evaluated as (False).
+1>        Target "ExcludeGeneratedDebugSymbol" skipped, due to false condition; ($(ExcludeGeneratedDebugSymbol)) was evaluated as (False).
+1>        Target "ExcludeXmlAssemblyFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ExcludeFilesFromPackage" depends on it):
+1>            Done building target "ExcludeXmlAssemblyFiles" in project "WebApplication.csproj".
+1>        Target "ExcludeFilesByExtension" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ExcludeFilesFromPackage" depends on it):
+1>            Building target "ExcludeFilesByExtension" completely.
+1>            No input files were specified.
+1>            Task "WriteLinesToFile" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert)) was evaluated as (False).
+1>            Done building target "ExcludeFilesByExtension" in project "WebApplication.csproj".
+1>        Target "ExcludeFilesByExtension" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ExcludeFilesFromPackage" depends on it):
+1>            Building target "ExcludeFilesByExtension" completely.
+1>            No input files were specified.
+1>            Task "WriteLinesToFile" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert)) was evaluated as (False).
+1>            Done building target "ExcludeFilesByExtension" in project "WebApplication.csproj".
+1>        Target "ExcludeFilesFromPackage" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>            Task "CreateItem"
+1>            Task Parameter:AdditionalMetadata=FromTarget=
+1>            Done executing task "CreateItem".
+1>            Task "MakeDir" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert) And !Exists($(PackageLogDir))) was evaluated as (False And !Exists(obj\Debug\Package\Log)).
+1>            Task "WriteLinesToFile" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert)) was evaluated as (False).
+1>            Task "FilterByItems"
+1>            Task Parameter:
+1>    PipelineItems=
+1>        bin\WebApplication.dll
+1>                Category=Run
+1>                DestinationRelativePath=bin\WebApplication.dll
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromIntermediateAssembly
+1>                ProjectFileType=Default
+1>        bin\WebApplication.pdb
+1>                Category=Debug
+1>                DestinationRelativePath=bin\WebApplication.pdb
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromIntermediateAssembly
+1>                ProjectFileType=Default
+1>        Default.aspx
+1>                Category=Run
+1>                DestinationRelativePath=Default.aspx
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>        Web.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>        Web.Template.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.Template.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>            Task Parameter:SourceMetadataName=DestinationRelativePath
+1>            Task Parameter:FilterBaseOnRelativePath=True
+1>            Done executing task "FilterByItems".
+1>            Task "FilterByItems"
+1>            Task Parameter:
+1>    PipelineItems=
+1>        bin\WebApplication.dll
+1>                Category=Run
+1>                DestinationRelativePath=bin\WebApplication.dll
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromIntermediateAssembly
+1>                ProjectFileType=Default
+1>        bin\WebApplication.pdb
+1>                Category=Debug
+1>                DestinationRelativePath=bin\WebApplication.pdb
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromIntermediateAssembly
+1>                ProjectFileType=Default
+1>        Default.aspx
+1>                Category=Run
+1>                DestinationRelativePath=Default.aspx
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>        Web.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>        Web.Template.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.Template.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>            Task Parameter:SourceMetadataName=DestinationRelativePath
+1>            Task Parameter:FilterBaseOnRelativePath=True
+1>            Task Parameter:FilterMetadataName=DestinationRelativePath
+1>            Done executing task "FilterByItems".
+1>            Task "FilterByItems"
+1>            Task Parameter:
+1>    PipelineItems=
+1>        bin\WebApplication.dll
+1>                Category=Run
+1>                DestinationRelativePath=bin\WebApplication.dll
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromIntermediateAssembly
+1>                ProjectFileType=Default
+1>        bin\WebApplication.pdb
+1>                Category=Debug
+1>                DestinationRelativePath=bin\WebApplication.pdb
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromIntermediateAssembly
+1>                ProjectFileType=Default
+1>        Default.aspx
+1>                Category=Run
+1>                DestinationRelativePath=Default.aspx
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>        Web.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>        Web.Template.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.Template.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>            Task Parameter:SourceMetadataName=FullPath
+1>            Task Parameter:FilterBaseOnRelativePath=False
+1>            Task Parameter:FilterMetadataName=FullPath
+1>            Done executing task "FilterByItems".
+1>            Task "WriteLinesToFile" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert)) was evaluated as (False).
+1>            Task "CallTarget"
+1>            Task Parameter:RunEachTargetSeparately=False
+1>            Done executing task "CallTarget".
+1>            Done building target "ExcludeFilesFromPackage" in project "WebApplication.csproj".
+1>        Target "ImportParametersFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineCollectFilesPhase" depends on it):
+1>            Task "ExportParametersFile" skipped, due to false condition; ( $(EnablePackageProcessLoggingAndAssert)) was evaluated as ( False).
+1>            Using "ImportParametersFile" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.Tasks.dll".
+1>            Task "ImportParametersFile"
+1>            Task Parameter:DisableEscapeMSBuildVariable=False
+1>            Done executing task "ImportParametersFile".
+1>            Task "ImportParametersFile"
+1>            Task Parameter:DisableEscapeMSBuildVariable=False
+1>            Done executing task "ImportParametersFile".
+1>            Task "ExportParametersFile" skipped, due to false condition; ( $(EnablePackageProcessLoggingAndAssert)) was evaluated as ( False).
+1>            Done building target "ImportParametersFiles" in project "WebApplication.csproj".
+1>        Done executing task "CallTarget".
+1>        Done building target "PipelineCollectFilesPhase" in project "WebApplication.csproj".
+1>    Target "AfterPipelineCollectFilesPhase" in file "C:\Data\Projects\HansKindberg-MSBuild-Investigation\Targets\Laboration.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineTransformPhase" depends on it):
+1>        Task "Message"
+1>        Task Parameter:Importance=high
+1>        Task Parameter:Text=Target after 'PipelineCollectFilesPhase' has been executed.
+1>        Message: Target after 'PipelineCollectFilesPhase' has been executed.
+1>        Done executing task "Message".
+1>        Task "Copy"
+1>        Task Parameter:DestinationFiles=Web.config
+1>        Task Parameter:SourceFiles=Web.Template.config
+1>        Copy: Copying file from "Web.Template.config" to "Web.config".
+1>        Done executing task "Copy".
+1>        Done building target "AfterPipelineCollectFilesPhase" in project "WebApplication.csproj".
+1>    Target "PipelineCollectFilesPhase" skipped. Previously built successfully.
+1>    Target "CollectWebConfigsToTransform" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PreTransformWebConfig" depends on it):
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "CollectWebConfigsToTransform" in project "WebApplication.csproj".
+1>    Target "PreTransformWebConfig" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "TransformWebConfig" depends on it):
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_FoundApplicationConfigForTransformation
+1>        Task Parameter:ArgumentCount=1
+1>        Task Parameter:Arguments=Web.config
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Found The following for Config tranformation:
+1>Web.config
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "MakeDir" skipped, due to false condition; (!Exists(%(Identity))) was evaluated as (!Exists(C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\TransformWebConfig\transformed\)).
+1>        Task "Delete" skipped, due to false condition; ((!$(UseParameterizeToTransformWebConfig) And Exists($(_WebConfigTransformOutputParametersFile))) 
+1>                       Or ($(UseParameterizeToTransformWebConfig) And !Exists($(_WebConfigTransformOutputParametersFile)))) was evaluated as ((!False And Exists(obj\Debug\TransformWebConfig.parameters.xml)) 
+1>                       Or (False And !Exists(obj\Debug\TransformWebConfig.parameters.xml))).
+1>        Task "WriteLinesToFile" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert) And ('@(WebConfigsToTransform)'!='') And !%(Exclude)) was evaluated as (False And ('Web.config'!='') And !False).
+1>        Task "WriteLinesToFile" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert)) was evaluated as (False).
+1>        Using "CopyPipelineFiles" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.Tasks.dll".
+1>        Task "CopyPipelineFiles"
+1>        Task Parameter:
+1>    PipelineItems=
+1>        Web.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>                TransformFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Web.Debug.config
+1>                TransformFileFolder=obj\Debug\TransformWebConfig\assist
+1>                TransformOriginalFolder=obj\Debug\TransformWebConfig\original
+1>                TransformOutputFile=obj\Debug\TransformWebConfig\transformed\Web.config
+1>                TransformScope=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\Web.config
+1>        Task Parameter:SourceDirectory=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication
+1>        Task Parameter:TargetDirectory=obj\Debug\TransformWebConfig\original
+1>        Task Parameter:SkipMetadataExcludeTrueItems=True
+1>        Task Parameter:UpdateItemSpec=False
+1>        Task Parameter:DeleteItemsMarkAsExcludeTrue=True
+1>        CopyPipelineFiles: Skip copying Web.config to obj\Debug\TransformWebConfig\original\Web.config, File obj\Debug\TransformWebConfig\original\Web.config is up to date
+1>        Done executing task "CopyPipelineFiles".
+1>        Task "Delete"
+1>        Done executing task "Delete".
+1>        Task "CopyPipelineFiles"
+1>        Task Parameter:
+1>    PipelineItems=
+1>        C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Web.Debug.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>                TransformFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Web.Debug.config
+1>                TransformFileFolder=obj\Debug\TransformWebConfig\assist
+1>                TransformOriginalFolder=obj\Debug\TransformWebConfig\original
+1>                TransformOutputFile=obj\Debug\TransformWebConfig\transformed\Web.config
+1>                TransformScope=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\Web.config
+1>        Task Parameter:SourceDirectory=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication
+1>        Task Parameter:TargetDirectory=obj\Debug\TransformWebConfig\assist
+1>        Task Parameter:SkipMetadataExcludeTrueItems=True
+1>        Task Parameter:UpdateItemSpec=False
+1>        Task Parameter:DeleteItemsMarkAsExcludeTrue=True
+1>        CopyPipelineFiles: Skip copying C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Web.Debug.config to obj\Debug\TransformWebConfig\assist\Web.config, File obj\Debug\TransformWebConfig\assist\Web.config is up to date
+1>        Done executing task "CopyPipelineFiles".
+1>        Task "Delete"
+1>        Done executing task "Delete".
+1>        Done building target "PreTransformWebConfig" in project "WebApplication.csproj".
+1>    Target "AfterPreTransformWebConfig" in file "C:\Data\Projects\HansKindberg-MSBuild-Investigation\Targets\Laboration.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "TransformWebConfig" depends on it):
+1>        Task "Message"
+1>        Task Parameter:Importance=high
+1>        Task Parameter:Text=Target after 'PreTransformWebConfig' has been executed.
+1>        Message: Target after 'PreTransformWebConfig' has been executed.
+1>        Done executing task "Message".
+1>        Task "Copy"
+1>        Task Parameter:DestinationFiles=Web.config
+1>        Task Parameter:SourceFiles=Web.Template.config
+1>        Copy: Copying file from "Web.Template.config" to "Web.config".
+1>        Done executing task "Copy".
+1>        Done building target "AfterPreTransformWebConfig" in project "WebApplication.csproj".
+1>    Target "PreTransformWebConfig" skipped. Previously built successfully.
+1>    Target "TransformWebConfigCore" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "TransformWebConfig" depends on it):
+1>        Skipping target "TransformWebConfigCore" because all output files are up-to-date with respect to the input files.
+1>        Input files: Web.config;C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Web.Debug.config
+1>        Output files: obj\Debug\TransformWebConfig\transformed\Web.config
+1>        Done building target "TransformWebConfigCore" in project "WebApplication.csproj".
+1>    Target "ParameterizeTransformWebConfigCore" skipped, due to false condition; ($(TransformWebConfigEnabled) And $(UseParameterizeToTransformWebConfig)) was evaluated as (true And False).
+1>    Target "TransformWebConfigCore" skipped. Previously built successfully.
+1>    Target "ParameterizeTransformWebConfigCore" skipped, due to false condition; ($(TransformWebConfigEnabled) And $(UseParameterizeToTransformWebConfig)) was evaluated as (true And False).
+1>    Target "PostTransformWebConfig" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "TransformWebConfig" depends on it):
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:Importance=High
+1>        Task Parameter:ID=PublishLocalizedString_TransformConfigUsingTransformFileToTransformOutputFile
+1>        Task Parameter:ArgumentCount=3
+1>        Task Parameter:
+1>    Arguments=
+1>        Web.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>                TransformFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Web.Debug.config
+1>                TransformFileFolder=obj\Debug\TransformWebConfig\assist
+1>                TransformOriginalFolder=obj\Debug\TransformWebConfig\original
+1>                TransformOutputFile=obj\Debug\TransformWebConfig\transformed\Web.config
+1>                TransformScope=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\Web.config
+1>        C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Web.Debug.config
+1>        obj\Debug\TransformWebConfig\transformed\Web.config
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Transformed Web.config using C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Web.Debug.config into obj\Debug\TransformWebConfig\transformed\Web.config.
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "ImportParametersFile" skipped, due to false condition; ($(UseParameterizeToTransformWebConfig) and Exists($(_WebConfigTransformOutputParametersFile))) was evaluated as (False and Exists(obj\Debug\TransformWebConfig.parameters.xml)).
+1>        Task "MakeDir" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert) And !Exists('$(PackageLogDir)')) was evaluated as (False And !Exists('obj\Debug\Package\Log')).
+1>        Task "WriteLinesToFile" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert)) was evaluated as (False).
+1>        Done building target "PostTransformWebConfig" in project "WebApplication.csproj".
+1>    Target "AfterPostTransformWebConfig" in file "C:\Data\Projects\HansKindberg-MSBuild-Investigation\Targets\Laboration.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "TransformWebConfig" depends on it):
+1>        Task "Message"
+1>        Task Parameter:Importance=high
+1>        Task Parameter:Text=Target after 'PostTransformWebConfig' has been executed.
+1>        Message: Target after 'PostTransformWebConfig' has been executed.
+1>        Done executing task "Message".
+1>        Done building target "AfterPostTransformWebConfig" in project "WebApplication.csproj".
+1>    Target "TransformWebConfig" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineTransformPhase" depends on it):
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "TransformWebConfig" in project "WebApplication.csproj".
+1>    Target "AfterTransformWebConfig" in file "C:\Data\Projects\HansKindberg-MSBuild-Investigation\Targets\Laboration.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineTransformPhase" depends on it):
+1>        Task "Message"
+1>        Task Parameter:Importance=high
+1>        Task Parameter:Text=Target after 'TransformWebConfig' has been executed.
+1>        Message: Target after 'TransformWebConfig' has been executed.
+1>        Done executing task "Message".
+1>        Done building target "AfterTransformWebConfig" in project "WebApplication.csproj".
+1>    Target "PipelineCollectFilesPhase" skipped. Previously built successfully.
+1>    Target "CollectFilesForProfileTransformWebConfigs" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PreProfileTransformWebConfig" depends on it):
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "CollectFilesForProfileTransformWebConfigs" in project "WebApplication.csproj".
+1>    Target "PreProfileTransformWebConfig" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ProfileTransformWebConfig" depends on it):
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_FoundApplicationConfigForTransformation
+1>        Task Parameter:ArgumentCount=1
+1>        Task Parameter:Arguments=Web.config
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Found The following for Config tranformation:
+1>Web.config
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "MakeDir" skipped, due to false condition; (!Exists(%(Identity))) was evaluated as (!Exists(C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\ProfileTransformWebConfig\transformed\)).
+1>        Task "Delete" skipped, due to false condition; ((!$(UseParameterizeToProfileTransformWebConfig) And Exists($(_ProfileWebConfigTransformOutputParametersFile))) 
+1>                       Or ($(UseParameterizeToProfileTransformWebConfig) And !Exists($(_ProfileWebConfigTransformOutputParametersFile)))) was evaluated as ((!False And Exists(obj\Debug\ProfileTransformWebConfig.parameters.xml)) 
+1>                       Or (False And !Exists(obj\Debug\ProfileTransformWebConfig.parameters.xml))).
+1>        Task "WriteLinesToFile" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert) And ('@(ProfileWebConfigsToTransform)'!='') And !%(Exclude)) was evaluated as (False And ('obj\Debug\TransformWebConfig\transformed\Web.config'!='') And !False).
+1>        Task "WriteLinesToFile" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert)) was evaluated as (False).
+1>        Task "CopyPipelineFiles"
+1>        Task Parameter:
+1>    PipelineItems=
+1>        obj\Debug\TransformWebConfig\transformed\Web.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>                TransformFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\\Web.Debug.config
+1>                TransformFileFolder=obj\Debug\ProfileTransformWebConfig\assist
+1>                TransformOriginalFolder=obj\Debug\ProfileTransformWebConfig\original
+1>                TransformOutputFile=obj\Debug\ProfileTransformWebConfig\transformed\Web.config
+1>                TransformScope=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\Web.config
+1>        Task Parameter:SourceDirectory=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication
+1>        Task Parameter:TargetDirectory=obj\Debug\ProfileTransformWebConfig\original
+1>        Task Parameter:SkipMetadataExcludeTrueItems=True
+1>        Task Parameter:UpdateItemSpec=False
+1>        Task Parameter:DeleteItemsMarkAsExcludeTrue=True
+1>        CopyPipelineFiles: Skip copying obj\Debug\TransformWebConfig\transformed\Web.config to obj\Debug\ProfileTransformWebConfig\original\Web.config, File obj\Debug\ProfileTransformWebConfig\original\Web.config is up to date
+1>        Done executing task "CopyPipelineFiles".
+1>        Task "Delete"
+1>        Done executing task "Delete".
+1>        Task "CopyPipelineFiles"
+1>        Task Parameter:
+1>    PipelineItems=
+1>        C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\\Web.Debug.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>                TransformFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\\Web.Debug.config
+1>                TransformFileFolder=obj\Debug\ProfileTransformWebConfig\assist
+1>                TransformOriginalFolder=obj\Debug\ProfileTransformWebConfig\original
+1>                TransformOutputFile=obj\Debug\ProfileTransformWebConfig\transformed\Web.config
+1>                TransformScope=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\Web.config
+1>        Task Parameter:SourceDirectory=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication
+1>        Task Parameter:TargetDirectory=obj\Debug\ProfileTransformWebConfig\assist
+1>        Task Parameter:SkipMetadataExcludeTrueItems=True
+1>        Task Parameter:UpdateItemSpec=False
+1>        Task Parameter:DeleteItemsMarkAsExcludeTrue=True
+1>        CopyPipelineFiles: Skip copying C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\\Web.Debug.config to obj\Debug\ProfileTransformWebConfig\assist\Web.config, File obj\Debug\ProfileTransformWebConfig\assist\Web.config is up to date
+1>        Done executing task "CopyPipelineFiles".
+1>        Task "Delete"
+1>        Done executing task "Delete".
+1>        Done building target "PreProfileTransformWebConfig" in project "WebApplication.csproj".
+1>    Target "AfterPreProfileTransformWebConfig" in file "C:\Data\Projects\HansKindberg-MSBuild-Investigation\Targets\Laboration.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ProfileTransformWebConfig" depends on it):
+1>        Task "Message"
+1>        Task Parameter:Importance=high
+1>        Task Parameter:Text=Target after 'PreProfileTransformWebConfig' has been executed.
+1>        Message: Target after 'PreProfileTransformWebConfig' has been executed.
+1>        Done executing task "Message".
+1>        Done building target "AfterPreProfileTransformWebConfig" in project "WebApplication.csproj".
+1>    Target "ProfileTransformWebConfigCore" skipped, due to false condition; ('@(ProfileWebConfigsToTransform)' != '' And $(ProfileTransformWebConfigEnabled) And !$(UseParameterizeToProfileTransformWebConfig)) was evaluated as ('obj\Debug\TransformWebConfig\transformed\Web.config' != '' And False And !False).
+1>    Target "ParameterizeProfileTransformWebConfigCore" skipped, due to false condition; ($(ProfileTransformWebConfigEnabled) And $(UseParameterizeToProfileTransformWebConfig)) was evaluated as (False And False).
+1>    Target "ProfileTransformWebConfigCore" skipped, due to false condition; ('@(ProfileWebConfigsToTransform)' != '' And $(ProfileTransformWebConfigEnabled) And !$(UseParameterizeToProfileTransformWebConfig)) was evaluated as ('obj\Debug\TransformWebConfig\transformed\Web.config' != '' And False And !False).
+1>    Target "ParameterizeProfileTransformWebConfigCore" skipped, due to false condition; ($(ProfileTransformWebConfigEnabled) And $(UseParameterizeToProfileTransformWebConfig)) was evaluated as (False And False).
+1>    Target "PostProfileTransformWebConfig" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ProfileTransformWebConfig" depends on it):
+1>        Task "GetPublishingLocalizedString" skipped, due to false condition; ('@(ProfileWebConfigsToTransform)'!='' And !%(ProfileWebConfigsToTransform.Exclude) And Exists(%(ProfileWebConfigsToTransform.TransformOutputFile))) was evaluated as ('obj\Debug\TransformWebConfig\transformed\Web.config'!='' And !False And Exists(obj\Debug\ProfileTransformWebConfig\transformed\Web.config)).
+1>        Task "ImportParametersFile" skipped, due to false condition; ($(UseParameterizeToProfileTransformWebConfig) and Exists($(_ProfileWebConfigTransformOutputParametersFile))) was evaluated as (False and Exists(obj\Debug\ProfileTransformWebConfig.parameters.xml)).
+1>        Task "MakeDir" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert) And !Exists('$(PackageLogDir)')) was evaluated as (False And !Exists('obj\Debug\Package\Log')).
+1>        Task "WriteLinesToFile" skipped, due to false condition; ($(EnablePackageProcessLoggingAndAssert)) was evaluated as (False).
+1>        Done building target "PostProfileTransformWebConfig" in project "WebApplication.csproj".
+1>    Target "AfterPostProfileTransformWebConfig" in file "C:\Data\Projects\HansKindberg-MSBuild-Investigation\Targets\Laboration.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "ProfileTransformWebConfig" depends on it):
+1>        Task "Message"
+1>        Task Parameter:Importance=high
+1>        Task Parameter:Text=Target after 'PostProfileTransformWebConfig' has been executed.
+1>        Message: Target after 'PostProfileTransformWebConfig' has been executed.
+1>        Done executing task "Message".
+1>        Done building target "AfterPostProfileTransformWebConfig" in project "WebApplication.csproj".
+1>    Target "ProfileTransformWebConfig" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineTransformPhase" depends on it):
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "ProfileTransformWebConfig" in project "WebApplication.csproj".
+1>    Target "AfterProfileTransformWebConfig" in file "C:\Data\Projects\HansKindberg-MSBuild-Investigation\Targets\Laboration.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineTransformPhase" depends on it):
+1>        Task "Message"
+1>        Task Parameter:Importance=high
+1>        Task Parameter:Text=Target after 'ProfileTransformWebConfig' has been executed.
+1>        Message: Target after 'ProfileTransformWebConfig' has been executed.
+1>        Done executing task "Message".
+1>        Done building target "AfterProfileTransformWebConfig" in project "WebApplication.csproj".
+1>    Target "InsertAdditionalWebCofigConnectionStrings" skipped, due to false condition; ($(InsertAdditionalWebCofigConnectionStrings) And '@(_ConnectionStringsToInsert)' != '') was evaluated as (True And '' != '').
+1>    Target "MarkWebConfigAssistFilesAsExclude" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "PipelineTransformPhase" depends on it):
+1>        Task "FilterByItems"
+1>        Task Parameter:
+1>    PipelineItems=
+1>        bin\WebApplication.dll
+1>                Category=Run
+1>                DestinationRelativePath=bin\WebApplication.dll
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromIntermediateAssembly
+1>                ProjectFileType=Default
+1>        bin\WebApplication.pdb
+1>                Category=Debug
+1>                DestinationRelativePath=bin\WebApplication.pdb
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromIntermediateAssembly
+1>                ProjectFileType=Default
+1>        Default.aspx
+1>                Category=Run
+1>                DestinationRelativePath=Default.aspx
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>        Web.Template.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.Template.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>        obj\Debug\TransformWebConfig\transformed\Web.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>                TransformFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Web.Debug.config
+1>                TransformFileFolder=obj\Debug\TransformWebConfig\assist
+1>                TransformOriginalFolder=obj\Debug\TransformWebConfig\original
+1>                TransformOutputFile=obj\Debug\TransformWebConfig\transformed\Web.config
+1>                TransformScope=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\Web.config
+1>        Task Parameter:SourceMetadataName=DependentUpon
+1>        Task Parameter:FilterMetadataName=DestinationRelativePath
+1>        Task Parameter:
+1>    Filter=
+1>        obj\Debug\TransformWebConfig\transformed\Web.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>                TransformFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Web.Debug.config
+1>                TransformFileFolder=obj\Debug\TransformWebConfig\assist
+1>                TransformOriginalFolder=obj\Debug\TransformWebConfig\original
+1>                TransformOutputFile=obj\Debug\TransformWebConfig\transformed\Web.config
+1>                TransformScope=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\Web.config
+1>        Done executing task "FilterByItems".
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "MarkWebConfigAssistFilesAsExclude" in project "WebApplication.csproj".
+1>    Target "_TransformWebConfigForAzureAuthentication" skipped, due to false condition; (('$(WebPublishMethod)' =='MsDeploy' or '$(WebPublishMethod)' =='Package')  and '$(EnableADPublish)' =='true') was evaluated as (('FileSystem' =='MsDeploy' or 'FileSystem' =='Package')  and '' =='true').
+1>    Target "PipelineTransformPhase" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "GatherAllFilesToPublish" depends on it):
+1>        Building target "PipelineTransformPhase" completely.
+1>        No input files were specified.
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:ID=PublishLocalizedString_WebPublishPipelineTransformPhase
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Publish Pipeline Transform Phase
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "PipelineTransformPhase" in project "WebApplication.csproj".
+1>    Target "CopyAllFilesToSingleFolderForPackage" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (target "GatherAllFilesToPublish" depends on it):
+1>        Task "Delete"
+1>        Done executing task "Delete".
+1>        Task "MakeDir" skipped, due to false condition; (!Exists('$(WPPAllFilesInSingleFolder)')) was evaluated as (!Exists('obj\Debug\Package\PackageTmp')).
+1>        Task "GetPublishingLocalizedString"
+1>        Task Parameter:Importance=High
+1>        Task Parameter:ID=PublishLocalizedString_WebPublishPipelineMaterializeAllFilesToTempDir
+1>        Task Parameter:ArgumentCount=1
+1>        Task Parameter:Arguments=obj\Debug\Package\PackageTmp
+1>        Task Parameter:LogType=Message
+1>        GetPublishingLocalizedString: Copying all files to temporary location below for package/publish:
+1>obj\Debug\Package\PackageTmp.
+1>        Done executing task "GetPublishingLocalizedString".
+1>        Task "CopyPipelineFiles"
+1>        Task Parameter:
+1>    PipelineItems=
+1>        bin\WebApplication.dll
+1>                Category=Run
+1>                DestinationRelativePath=bin\WebApplication.dll
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromIntermediateAssembly
+1>                ProjectFileType=Default
+1>        bin\WebApplication.pdb
+1>                Category=Debug
+1>                DestinationRelativePath=bin\WebApplication.pdb
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromIntermediateAssembly
+1>                ProjectFileType=Default
+1>        Default.aspx
+1>                Category=Run
+1>                DestinationRelativePath=Default.aspx
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>        Web.Template.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.Template.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>        obj\Debug\TransformWebConfig\transformed\Web.config
+1>                Category=Run
+1>                DestinationRelativePath=Web.config
+1>                Exclude=False
+1>                FromTarget=CollectFilesFromContent
+1>                ProjectFileType=Default
+1>                TransformFile=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\Web.Debug.config
+1>                TransformFileFolder=obj\Debug\TransformWebConfig\assist
+1>                TransformOriginalFolder=obj\Debug\TransformWebConfig\original
+1>                TransformOutputFile=obj\Debug\TransformWebConfig\transformed\Web.config
+1>                TransformScope=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\Web.config
+1>        Task Parameter:SourceDirectory=C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication
+1>        Task Parameter:TargetDirectory=obj\Debug\Package\PackageTmp
+1>        Task Parameter:SkipMetadataExcludeTrueItems=True
+1>        Task Parameter:UpdateItemSpec=True
+1>        Task Parameter:DeleteItemsMarkAsExcludeTrue=True
+1>        CopyPipelineFiles: Copying bin\WebApplication.dll to obj\Debug\Package\PackageTmp\bin\WebApplication.dll.
+1>        CopyPipelineFiles: Copying bin\WebApplication.pdb to obj\Debug\Package\PackageTmp\bin\WebApplication.pdb.
+1>        CopyPipelineFiles: Skip copying Default.aspx to obj\Debug\Package\PackageTmp\Default.aspx, File obj\Debug\Package\PackageTmp\Default.aspx is up to date
+1>        CopyPipelineFiles: Skip copying Web.Template.config to obj\Debug\Package\PackageTmp\Web.Template.config, File obj\Debug\Package\PackageTmp\Web.Template.config is up to date
+1>        CopyPipelineFiles: Skip copying obj\Debug\TransformWebConfig\transformed\Web.config to obj\Debug\Package\PackageTmp\Web.config, File obj\Debug\Package\PackageTmp\Web.config is up to date
+1>        Done executing task "CopyPipelineFiles".
+1>        Using "RemoveEmptyDirectories" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.Tasks.dll".
+1>        Task "RemoveEmptyDirectories"
+1>        Task Parameter:Directories=obj\Debug\Package\PackageTmp
+1>        Task Parameter:LogErrorAsWarning=True
+1>        Done executing task "RemoveEmptyDirectories".
+1>        Task "MakeDir" skipped, due to false condition; (!Exists('$(WPPAllFilesInSingleFolder)')) was evaluated as (!Exists('obj\Debug\Package\PackageTmp')).
+1>        Task "CallTarget"
+1>        Task Parameter:RunEachTargetSeparately=False
+1>        Done executing task "CallTarget".
+1>        Done building target "CopyAllFilesToSingleFolderForPackage" in project "WebApplication.csproj".
+1>    Target "GatherAllFilesToPublish" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\Web\Microsoft.Web.Publishing.targets" from project "C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\WebApplication.csproj" (entry point):
+1>        Done building target "GatherAllFilesToPublish" in project "WebApplication.csproj".
+1>Done building project "WebApplication.csproj".
+1>Deleting existing files...
+1>Publishing folder /...
+1>Publishing file C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\Default.aspx
+1>Publishing file C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\Web.config
+1>Publishing file C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\Web.Template.config
+1>Publishing folder bin...
+1>Publishing file C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\bin\WebApplication.dll
+1>Publishing file C:\Data\Projects\HansKindberg-MSBuild-Investigation\WebApplication\obj\Debug\Package\PackageTmp\bin\WebApplication.pdb
+1>Site was published successfully ..\Deploy\Debug
+1>
+========== Build: 0 succeeded, 0 failed, 1 up-to-date, 0 skipped ==========
+========== Publish: 1 succeeded, 0 failed, 0 skipped ==========
+
+Build Summary
+-------------
+00:00.001 - Success - Debug Any CPU - WebApplication\WebApplication.csproj
+
+Total build time: 00:00.364
+
+========== Rebuild All: 1 succeeded or up-to-date, 0 failed, 1 skipped, Completed at 1/11/2014 11:24:41 AM ==========

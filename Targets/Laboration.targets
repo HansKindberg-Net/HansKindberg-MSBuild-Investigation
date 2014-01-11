@@ -1,12 +1,129 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<!--
 	<Target
-		Name="Investigate"
-		AfterTargets="AfterBuild"
+		Name="AfterAssignProjectConfiguration"
+		AfterTargets="AssignProjectConfiguration"
 	>
 		<Message
 			Importance="high"
-			Text="This message is generated in a target running after the AfterBuild target."
+			Text="Target after 'AssignProjectConfiguration' has been executed."
 		/>
 	</Target>
+		-->
+	<Target
+		Name="AfterPipelineCollectFilesPhase"
+		AfterTargets="PipelineCollectFilesPhase"
+	>
+		<Message
+			Importance="high"
+			Text="Target after 'PipelineCollectFilesPhase' has been executed."
+		/>
+		<Copy
+			DestinationFiles="Web.config"
+			SourceFiles="Web.Template.config"
+		/>
+	</Target>
+	<Target
+		Name="BeforeBeforeBuild"
+		BeforeTargets="BeforeBuild"
+	>
+		<Message
+			Importance="high"
+			Text="Target before 'BeforeBuild' has been executed."
+		/>
+		<Copy
+			DestinationFiles="Web.config"
+			SourceFiles="Web.Template.config"
+		/>
+	</Target>
+
+
+
+	<Target
+		Name="AfterPreTransformWebConfig"
+		AfterTargets="PreTransformWebConfig"
+	>
+		<Message
+			Importance="high"
+			Text="Target after 'PreTransformWebConfig' has been executed."
+		/>
+		<Copy
+			DestinationFiles="Web.config"
+			SourceFiles="Web.Template.config"
+		/>
+	</Target>
+	<Target
+		Name="AfterTransformWebConfig"
+		AfterTargets="TransformWebConfig"
+	>
+		<Message
+			Importance="high"
+			Text="Target after 'TransformWebConfig' has been executed."
+		/>
+	</Target>
+	<Target
+		Name="AfterPostTransformWebConfig"
+		AfterTargets="PostTransformWebConfig"
+	>
+		<Message
+			Importance="high"
+			Text="Target after 'PostTransformWebConfig' has been executed."
+		/>
+	</Target>
+
+
+
+
+	<Target
+		Name="AfterPreProfileTransformWebConfig"
+		AfterTargets="PreProfileTransformWebConfig"
+	>
+		<Message
+			Importance="high"
+			Text="Target after 'PreProfileTransformWebConfig' has been executed."
+		/>
+	</Target>
+	<Target
+		Name="AfterProfileTransformWebConfig"
+		AfterTargets="ProfileTransformWebConfig"
+	>
+		<Message
+			Importance="high"
+			Text="Target after 'ProfileTransformWebConfig' has been executed."
+		/>
+	</Target>
+	<Target
+		Name="AfterPostProfileTransformWebConfig"
+		AfterTargets="PostProfileTransformWebConfig"
+	>
+		<Message
+			Importance="high"
+			Text="Target after 'PostProfileTransformWebConfig' has been executed."
+		/>
+	</Target>
+	<!--
+		Somewhere you can check if this exists
+		obj\Debug\TransformWebConfig\transformed\Web.config
+	-->
+
+	<Target
+		Name="After_CheckForInvalidConfigurationAndPlatform"
+		AfterTargets="_CheckForInvalidConfigurationAndPlatform"
+	>
+		<Message
+			Importance="high"
+			Text="Target after '_CheckForInvalidConfigurationAndPlatform' has been executed."
+		/>
+	</Target>
+	<Target
+		Name="Before_CheckForInvalidConfigurationAndPlatform"
+		BeforeTargets="_CheckForInvalidConfigurationAndPlatform"
+	>
+		<Message
+			Importance="high"
+			Text="Target before '_CheckForInvalidConfigurationAndPlatform' has been executed."
+		/>
+	</Target>
+	
 </Project>
