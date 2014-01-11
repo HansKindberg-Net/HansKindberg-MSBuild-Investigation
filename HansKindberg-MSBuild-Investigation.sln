@@ -23,9 +23,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Targets", "Targets", "{F839
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{49DA592E-8F92-4E26-8CFD-9FF9E9C19802}"
-	ProjectSection(SolutionItems) = preProject
-		Deploy\Deploy-ReadMe.txt = Deploy\Deploy-ReadMe.txt
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
