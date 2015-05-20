@@ -1,5 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Guid Condition="$(Guid) == ''">$([System.Guid]::NewGuid())</Guid>
+	</PropertyGroup>
+
+
+
+
+	<!--
+	<Target Name="Test" AfterTargets="AfterBuild">
+		<Message Text="After targets AfterBuild: Guid = $(Guid)" Importance="high" />
+	</Target>
+	-->
+
+	<Target Name="AfterAfterClean" BeforeTargets="AfterClean">
+		<Message
+			Importance="high"
+			Text="After target AfterClean"
+		/>
+	</Target>
+
+	<Target Name="AfterAfterBuild" BeforeTargets="AfterBuild">
+		<Message
+			Importance="high"
+			Text="After target AfterBuild"
+		/>
+	</Target>
+
+
+
+	<!--
+	<Target Name="BeforeBeforeClean" BeforeTargets="BeforeClean">
+		<Message
+			Importance="high"
+			Text="Before target BeforeClean"
+		/>
+	</Target>
+
+	<Target Name="BackupWebConfig" AfterTargets="PreTransformWebConfig">
+		<Message
+			Importance="high"
+			Text="After PreTransformWebConfig: obj\$(Configuration)\TransformWebConfig\original exists"
+		/>
+		<Message
+			Condition="!Exists('obj\$(Configuration)\TransformWebConfig\original')"
+			Importance="high"
+			Text="After PreTransformWebConfig: obj\$(Configuration)\TransformWebConfig\original DOES NOT exist"
+		/>
+	</Target>
+
+
+
+	<Target Name="RestoreWebConfig" AfterTargets="PostTransformWebConfig">
+		<Message
+			Condition="Exists('obj\$(Configuration)\TransformWebConfig\original')"
+			Importance="high"
+			Text="After PostTransformWebConfig: obj\$(Configuration)\TransformWebConfig\original exists"
+		/>
+		<Message
+			Condition="!Exists('obj\$(Configuration)\TransformWebConfig\original')"
+			Importance="high"
+			Text="After PostTransformWebConfig: obj\$(Configuration)\TransformWebConfig\original DOES NOT exist"
+		/>
+	</Target>
+	
+	
+	
+	-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!--
 	<Target
 		Name="AfterAssignProjectConfiguration"
@@ -11,6 +101,32 @@
 		/>
 	</Target>
 		-->
+
+
+	<!--
+	<PropertyGroup>
+		<PrepareForRunDependsOn>
+			$(PrepareForRunDependsOn);
+			Yeah;
+		</PrepareForRunDependsOn>
+	</PropertyGroup>
+	<Target Name="Yeah">
+		<Message
+			Importance="high"
+			Text="PrepareForRunDependsOn"
+		/>
+	</Target>
+
+
+
+
+
+
+
+
+
+
+
 	<Target
 		Name="AfterPipelineCollectFilesPhase"
 		AfterTargets="PipelineCollectFilesPhase"
@@ -102,11 +218,19 @@
 			Text="Target after 'PostProfileTransformWebConfig' has been executed."
 		/>
 	</Target>
+	-->
 	<!--
 		Somewhere you can check if this exists
 		obj\Debug\TransformWebConfig\transformed\Web.config
 	-->
 
+
+
+
+
+
+
+	<!--
 	<Target
 		Name="After_CheckForInvalidConfigurationAndPlatform"
 		AfterTargets="_CheckForInvalidConfigurationAndPlatform"
@@ -125,5 +249,5 @@
 			Text="Target before '_CheckForInvalidConfigurationAndPlatform' has been executed."
 		/>
 	</Target>
-	
+	-->
 </Project>
